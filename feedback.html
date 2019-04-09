@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="keywords" content="металлообработка, контейнеры, металлоконструции, каркас, каркасы, утепление, интеп"/> 
+<meta name="description" content="Этот сайт является основным сайтом компании ООО интеп,для пердоставления услуг потребителю" />
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="img/monitor.ico" rel="shortcut icon" type="image/x-icon"/>
+<title>ООО"ИНТЕП"</title>
+</head>
+<body>
+	<div id="page-wrap">
+<header>
+	<span class="center"><a href="index.html" title="На главную" id="logo" >  <img src="img/intep12.png" height="200" width="400" /></span> </a> <span class="right"><a href="contacts.html" title="Контакты для связи">Контакты для связи:<br /> Будни c 9.00 до 19.00 <br /> +7 (921) 952-91-99</a></span> <span class="contacts"></span></span>
+</header>
+<div class="clear"><br /></div>
+<center>
+	<div id="menu"> Разделы<hr /></div>
+	<div id="menuHrefs">⚫
+	<a href="about.html">О НАС</a>⚫
+	<a href="usjob.html">ВЫПОЛНЕННЫЕ РАБОТЫ</a>⚫
+	<a href="contacts.html">КОНТАКТЫ</a>⚫
+	<a href="feedbackforn.php">ОБРАТНАЯ СВЯЗЬ</a>⚫
+</div>
+</center>
+<div id="wrapper">
+	<div id="articles">
+		<form name="feedback" action="" method="post">
+			<label for="subject">Тема сообщения</label>
+			<input type="text" id="subject" name="subject" placeholder="Тема сообщения" value="<?=$_SESSION["subject"]?>" />
+			<span style="color: red"><?=eror_subject?></span>
+			<label for="from">Кому</label>
+			<input type="from"  id="from" name="from" placeholder="intepinfo@yandex.ru" value="<?=$_SESSION["from"]?>" />
+			<span style="color: red"><?=eror_from?></span>
+			<label for="email">Email</label>
+			<input type="email"  id="email" name="email" placeholder="adress@example.com" value="<?=$_SESSION["email"]?>" />
+			<span style="color: red"><?=eror_email?></span>
+			<label for="name">Введите Ваше ФИО</label>
+			<input type="text" id="name" name="name"  placeholder="Введите Ваше ФИО" value="<?=$_SESSION["name"]?>" />
+			<span style="color: red"><?=eror_name?></span>
+			<label for="message">Введите Ваше сообщение</label>
+			<textarea  id="message" name="message" placeholder="Введите Ваше сообщение" cols="30" rows="10" > <?=$_SESSION[message]?> </textarea>
+			<span style="color: red"><?=eror_message?></span>
+			<input type="submit" value="Отправить" id="send" name="send" />
+		</form>
+</div>
+</div>
+</div>
+<footer>
+	<span class="left"> Все права защищены &copy; 2018 </span><span class="right"><a href="https://vk.com/public174745738"><img src="img/VK.png" alt="Группа Vk" title="Группа Vk"/><span class="right"></span></a><a href="https://www.instagram.com/intep_info/"><img src="img/inst.png" alt="Наш Instagram" title="Наш Instagram"/></a><span class="right"></span>
+</footer>
+</body>
+</html>
